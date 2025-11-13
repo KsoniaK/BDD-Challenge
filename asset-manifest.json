@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/BDD-Challenge/static/css/main.2934dbcf.chunk.css",
+    "main.js": "/BDD-Challenge/static/js/main.bf8590f4.chunk.js",
+    "main.js.map": "/BDD-Challenge/static/js/main.bf8590f4.chunk.js.map",
+    "runtime-main.js": "/BDD-Challenge/static/js/runtime-main.2ff6b40f.js",
+    "runtime-main.js.map": "/BDD-Challenge/static/js/runtime-main.2ff6b40f.js.map",
+    "static/js/2.46e58bf5.chunk.js": "/BDD-Challenge/static/js/2.46e58bf5.chunk.js",
+    "static/js/2.46e58bf5.chunk.js.map": "/BDD-Challenge/static/js/2.46e58bf5.chunk.js.map",
+    "index.html": "/BDD-Challenge/index.html",
+    "precache-manifest.50d629c9eb4bffc11db3dc6805563ee5.js": "/BDD-Challenge/precache-manifest.50d629c9eb4bffc11db3dc6805563ee5.js",
+    "service-worker.js": "/BDD-Challenge/service-worker.js",
+    "static/css/main.2934dbcf.chunk.css.map": "/BDD-Challenge/static/css/main.2934dbcf.chunk.css.map",
+    "static/js/2.46e58bf5.chunk.js.LICENSE.txt": "/BDD-Challenge/static/js/2.46e58bf5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ff6b40f.js",
+    "static/js/2.46e58bf5.chunk.js",
+    "static/css/main.2934dbcf.chunk.css",
+    "static/js/main.bf8590f4.chunk.js"
+  ]
+}
