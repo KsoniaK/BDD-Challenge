@@ -6,7 +6,7 @@ function Series() {
 
   // 🟢 1. Charger la liste des séries au montage du composant
   useEffect(() => {
-    fetch("https://bdd-challenge.onrender.com/read/genre/series") // <-- URL du backend
+    fetch("https://bdd-challenge.onrender.com/read/genre/series")
       .then((res) => res.json())
       .then((data) => {
         console.log("Séries reçues :", data);
@@ -24,19 +24,20 @@ function Series() {
         titre_media: titre,
         image_media: image,
         date_sortie_media: date,
-        type_media: "SERIE", // important !
+        type_media: "SERIE",
       }),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log("Série ajoutée :", data);
-        // Recharger la liste des films après ajout
+        // Recharger les séries
         return fetch("https://bdd-challenge.onrender.com/read/genre/series");
       })
       .then((res) => res.json())
       .then((data) => setSeries(data))
       .catch((err) => console.error("Erreur ajout série :", err));
   };
+
 
   return (
             <div>

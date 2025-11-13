@@ -27,7 +27,7 @@ function Films() {
       date_sortie_media: date,
       type_media: "FILM",
     }),
-    })
+  })
       .then((res) => res.json())
       .then((data) => {
         console.log("Film ajouté :", data);
