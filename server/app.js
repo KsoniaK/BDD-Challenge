@@ -12,9 +12,10 @@ const mysqlApostrophe = require("mysql-apostrophe");
 
 
 // Autorise toutes les origines (React, Postman, etc.)
+const cors = require("cors");
 app.use(cors({
-  origin: 'http://localhost:3000', // <-- ton frontend React
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  origin: "https://ksoniak.github.io",  // ton site GitHub Pages
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
@@ -41,7 +42,7 @@ app.use("/read", lecture);
 
 
 //CHOIX DU PORT UTILISE PAR LE SERVEUR
-const port = process.env.PORT || 3001; //RECUPERE LE PORT LIBRE SI NON 
+const port = process.env.PORT || 3000; //RECUPERE LE PORT LIBRE SI NON 
 app.listen(port, function(){
     console.log("Ok ça marche");
     console.log("Le serveur utilise le port: " + port)
