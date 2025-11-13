@@ -6,7 +6,7 @@ function Films() {
 
   // 🟢 1. Charger la liste des films au montage du composant
   useEffect(() => {
-    fetch("http://https://bdd-challenge.onrender.com/read/genre/films") // <-- URL du backend
+    fetch("https://bdd-challenge.onrender.com/read/genre/films") // <-- URL du backend
       .then((res) => res.json())
       .then((data) => {
         console.log("Films reçus :", data);
