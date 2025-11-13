@@ -13,13 +13,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Router>
+        <Router basename="/BDD-Challenge">
           <Navigation />
-            <Switch>
-                <Route exact path='/home' component={Home} />
-                <Route exact path='/series' component={Series} />
-                <Route exact path='/films' component={Films} />
-            </Switch>
+          <Switch>
+            <Route exact path='/BDD-Challenge/home' component={Home} />
+            <Route exact path='/BDD-Challenge/series' component={Series} />
+            <Route exact path='/BDD-Challenge/films' component={Films} />
+          </Switch>
         </Router>
       </header>
     </div>
