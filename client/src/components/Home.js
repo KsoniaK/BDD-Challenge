@@ -20,7 +20,7 @@ class Home extends React.Component {
 
    
     componentDidMount(){
-        fetch("http://localhost:3001/read/genre")
+        fetch("https://bdd-challenge.onrender.com/read/genre")
         .then((response) => {
             return response.json();
         })

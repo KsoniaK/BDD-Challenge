@@ -6,7 +6,7 @@ function Films() {
 
   // 🟢 1. Charger la liste des films au montage du composant
   useEffect(() => {
-    fetch("http://localhost:3001/read/genre/films") // <-- URL du backend
+    fetch("http://https://bdd-challenge.onrender.com/read/genre/films") // <-- URL du backend
       .then((res) => res.json())
       .then((data) => {
         console.log("Films reçus :", data);
@@ -17,7 +17,7 @@ function Films() {
 
   // 🟢 2. Fonction pour ajouter un film
   const ajouterFilm = (titre, image, date) => {
-    fetch("http://localhost:3001/read/genre/films", {
+    fetch("https://bdd-challenge.onrender.com/read/genre/films", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -31,7 +31,7 @@ function Films() {
       .then((data) => {
         console.log("Film ajouté :", data);
         // Recharger la liste des films après ajout
-        return fetch("http://localhost:3001/read/genre/films");
+        return fetch("https://bdd-challenge.onrender.com/read/genre/films");
       })
       .then((res) => res.json())
       .then((data) => setFilms(data))
